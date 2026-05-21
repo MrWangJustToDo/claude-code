@@ -52,6 +52,7 @@ export class SentryErrorBoundary extends React.Component<Props, State> {
             React Rendering Error
           </Text>
           <Text color="error">{this.state.error?.message}</Text>
+          <Text dimColor>{this.state.errorInfo?.componentStack}</Text>
           {this.props.name && <Text dimColor>Boundary: {this.props.name}</Text>}
         </Box>
       );
