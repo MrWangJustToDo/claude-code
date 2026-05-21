@@ -352,6 +352,28 @@ export default class Ink {
         rendererPackageName: 'ink',
       });
     }
+
+    // @my-react DevTools — enabled when MY_REACT_DEVTOOL=1
+    if (process.env.MY_REACT_DEVTOOL) {
+      const injectIntoDevTools = async (url: string, config: any) => {
+        const { preloadDevToolRuntimeAuto } = await import('react-reconciler/preload');
+        await preloadDevToolRuntimeAuto();
+        const { io } = await import('socket.io-client');
+        // @ts-expect-error socket.io-client attaches to globalThis
+        globalThis.io = io;
+        const typedReconciler = reconciler as typeof reconciler & {
+          injectIntoDevToolsAuto: (url: string, config: any) => Promise<void>;
+        };
+        typedReconciler.injectIntoDevToolsAuto(url, config);
+      };
+
+      const DEVTOOL_PATH = process.env.DEVTOOL_PATH || 'localhost';
+      const DEVTOOL_PORT = process.env.DEVTOOL_PORT || '3002';
+
+      injectIntoDevTools(`http://${DEVTOOL_PATH}:${DEVTOOL_PORT}`, {
+        rendererPackageName: '@my-react/react-terminal',
+      });
+    }
   }
 
   private handleResume = () => {

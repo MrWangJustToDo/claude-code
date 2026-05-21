@@ -7,6 +7,10 @@
  *   theme/       — Theme system (ThemeProvider, ThemedBox, ThemedText, design-system)
  */
 
+if (process.env.MY_REACT_DEVTOOL) {
+  require('./devtool.js')
+}
+
 // ============================================================
 // Core API (render/createRoot)
 // ============================================================
