@@ -47,7 +47,7 @@
     "build:bun": "bun run build.ts",
     "dev": "bun run scripts/dev.ts",
     "dev:inspect": "bun run scripts/dev-debug.ts",
-    "dev:devtool": "MY_REACT_DEVTOOL=1 DEVTOOL_PATH=10.23.196.23 bun run scripts/dev.ts",
+    "dev:devtool": "MY_REACT_DEVTOOL=1 bun run scripts/dev.ts",
     "prepublishOnly": "bun run build:vite",
     "lint": "biome lint .",
     "lint:fix": "biome lint --fix .",
