@@ -24,10 +24,10 @@ const destDir = path.join(packageDir, 'src')
 const destFile = path.join(destDir, 'devtool.js')
 
 async function main() {
-  if (existsSync(destFile)) {
-    console.log('[ink-devtool] devtool.js already exists, skipping download.')
-    return
-  }
+  // if (existsSync(destFile)) {
+  //   console.log('[ink-devtool] devtool.js already exists, skipping download.')
+  //   return
+  // }
 
   console.log('[ink-devtool] Downloading @my-react devtool runtime...')
 

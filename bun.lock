@@ -41,7 +41,7 @@
         "@langfuse/otel": "^5.1.0",
         "@langfuse/tracing": "^5.1.0",
         "@modelcontextprotocol/sdk": "^1.29.0",
-        "@my-react/react": "^0.3.25",
+        "@my-react/react": "^0.3.27",
         "@opentelemetry/api": "^1.9.1",
         "@opentelemetry/api-logs": "^0.215.0",
         "@opentelemetry/core": "^2.7.0",
@@ -121,9 +121,9 @@
         "plist": "^3.1.0",
         "proper-lockfile": "^4.1.2",
         "qrcode": "^1.5.4",
-        "react": "npm:@my-react/react@0.3.25",
+        "react": "npm:@my-react/react@0.3.27",
         "react-compiler-runtime": "^1.0.0",
-        "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.16",
+        "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.18",
         "rollup": "^4.60.2",
         "semver": "^7.7.4",
         "sharp": "^0.34.5",
@@ -172,7 +172,7 @@
       "name": "@anthropic/ink",
       "version": "1.0.0",
       "dependencies": {
-        "@my-react/react": "^0.3.25",
+        "@my-react/react": "^0.3.27",
         "auto-bind": "^5.0.1",
         "bidi-js": "^1.0.3",
         "chalk": "^5.6.2",
@@ -182,8 +182,8 @@
         "get-east-asian-width": "^1.5.0",
         "indent-string": "^5.0.0",
         "lodash-es": "^4.17.23",
-        "react": "npm:@my-react/react@0.3.25",
-        "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.16",
+        "react": "npm:@my-react/react@0.3.27",
+        "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.18",
         "signal-exit": "^4.1.0",
         "socket.io-client": "^4.8.3",
         "strip-ansi": "^7.2.0",
@@ -779,9 +779,9 @@
 
     "@modelcontextprotocol/sdk": ["@modelcontextprotocol/sdk@1.29.0", "https://registry.npmmirror.com/@modelcontextprotocol/sdk/-/sdk-1.29.0.tgz", { "dependencies": { "@hono/node-server": "^1.19.9", "ajv": "^8.17.1", "ajv-formats": "^3.0.1", "content-type": "^1.0.5", "cors": "^2.8.5", "cross-spawn": "^7.0.5", "eventsource": "^3.0.2", "eventsource-parser": "^3.0.0", "express": "^5.2.1", "express-rate-limit": "^8.2.1", "hono": "^4.11.4", "jose": "^6.1.3", "json-schema-typed": "^8.0.2", "pkce-challenge": "^5.0.0", "raw-body": "^3.0.0", "zod": "^3.25 || ^4.0", "zod-to-json-schema": "^3.25.1" }, "peerDependencies": { "@cfworker/json-schema": "^4.1.1" }, "optionalPeers": ["@cfworker/json-schema"] }, "sha512-zo37mZA9hJWpULgkRpowewez1y6ML5GsXJPY8FI0tBBCd77HEvza4jDqRKOXgHNn867PVGCyTdzqpz0izu5ZjQ=="],
 
-    "@my-react/react": ["@my-react/react@0.3.25", "", { "dependencies": { "@my-react/react-jsx": "^0.3.25", "react-compiler-runtime": "^1.0.0" }, "peerDependencies": { "react": "^17 || ^18 || ^19" } }, "sha512-liFIYpvI4U+4NWtpZrjZA17P77u+fJQMTwzgKtUFMkR184rvbX6ohs4WHKEqmdt9OdvT/yu+TMgi9lwMp+Afhg=="],
+    "@my-react/react": ["@my-react/react@0.3.27", "", { "dependencies": { "@my-react/react-jsx": "^0.3.27", "react-compiler-runtime": "^1.0.0" }, "peerDependencies": { "react": "^17 || ^18 || ^19" } }, "sha512-d0UirX8PE1G1i8aQ1lDAZ9HX+K7bxaLs49IP7e8jwu7UDRp49Deh0wRR+nEfvvsI1eY5OOWCq+axz3lGgWHlnQ=="],
 
-    "@my-react/react-jsx": ["@my-react/react-jsx@0.3.25", "", { "peerDependencies": { "@my-react/react": ">=0.3.25" } }, "sha512-FkjG76y62FDcPXOvDuM2uzBp/RJZf+gLd4lHgGPYIDCamck2pujQgAoZ383gbNfOUq9de7BrGT9Zm7pmEbQ/Gw=="],
+    "@my-react/react-jsx": ["@my-react/react-jsx@0.3.27", "", { "peerDependencies": { "@my-react/react": ">=0.3.27" } }, "sha512-8TNFD8+KpPOc8ZgRWSBavTIgXNRSg39+rEtS6oGv+BZzvMTKiColtOvqES+kxi6Rb8PGc/KipWScPnTTorlEHA=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.3", "https://registry.npmmirror.com/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.3.tgz", { "dependencies": { "@tybys/wasm-util": "^0.10.1" }, "peerDependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1" } }, "sha512-xK9sGVbJWYb08+mTJt3/YV24WxvxpXcXtP6B172paPZ+Ts69Re9dAr7lKwJoeIx8OoeuimEiRZ7umkiUVClmmQ=="],
 
@@ -2511,13 +2511,13 @@
 
     "raw-body": ["raw-body@3.0.2", "https://registry.npmmirror.com/raw-body/-/raw-body-3.0.2.tgz", { "dependencies": { "bytes": "~3.1.2", "http-errors": "~2.0.1", "iconv-lite": "~0.7.0", "unpipe": "~1.0.0" } }, "sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA=="],
 
-    "react": ["@my-react/react@0.3.25", "", { "dependencies": { "@my-react/react-jsx": "^0.3.25", "react-compiler-runtime": "^1.0.0" }, "peerDependencies": { "react": "^17 || ^18 || ^19" } }, "sha512-liFIYpvI4U+4NWtpZrjZA17P77u+fJQMTwzgKtUFMkR184rvbX6ohs4WHKEqmdt9OdvT/yu+TMgi9lwMp+Afhg=="],
+    "react": ["@my-react/react@0.3.27", "", { "dependencies": { "@my-react/react-jsx": "^0.3.27", "react-compiler-runtime": "^1.0.0" }, "peerDependencies": { "react": "^17 || ^18 || ^19" } }, "sha512-d0UirX8PE1G1i8aQ1lDAZ9HX+K7bxaLs49IP7e8jwu7UDRp49Deh0wRR+nEfvvsI1eY5OOWCq+axz3lGgWHlnQ=="],
 
     "react-compiler-runtime": ["react-compiler-runtime@1.0.0", "https://registry.npmmirror.com/react-compiler-runtime/-/react-compiler-runtime-1.0.0.tgz", { "peerDependencies": { "react": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental" } }, "sha512-rRfjYv66HlG8896yPUDONgKzG5BxZD1nV9U6rkm+7VCuvQc903C4MjcoZR4zPw53IKSOX9wMQVpA1IAbRtzQ7w=="],
 
     "react-dom": ["react-dom@19.2.5", "https://registry.npmmirror.com/react-dom/-/react-dom-19.2.5.tgz", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.5" } }, "sha512-J5bAZz+DXMMwW/wV3xzKke59Af6CHY7G4uYLN1OvBcKEsWOs4pQExj86BBKamxl/Ik5bx9whOrvBlSDfWzgSag=="],
 
-    "react-reconciler": ["@my-react/react-reconciler-compact@0.0.16", "", { "peerDependencies": { "@my-react/react": ">=0.3.25" } }, "sha512-o4MhU0i0TEbaftAgfa+4CtOOjD5EhEOQfA9WpJrj/vlfdNuoFOV5/7b2eX+1hjeumEitUM48sRvttrQbrflhkg=="],
+    "react-reconciler": ["@my-react/react-reconciler-compact@0.0.18", "", { "peerDependencies": { "@my-react/react": ">=0.3.27" } }, "sha512-8bMjc19hUd/AM+JXCrhgLi4m1vb11ja6KUAFLa7f6q3m3bv0TDJ3cDlswt59zkwZNvRmwDfYo5J4kEpBKFC7/w=="],
 
     "react-refresh": ["react-refresh@0.17.0", "https://registry.npmmirror.com/react-refresh/-/react-refresh-0.17.0.tgz", {}, "sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ=="],
 

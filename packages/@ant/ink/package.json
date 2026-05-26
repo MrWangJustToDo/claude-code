@@ -12,7 +12,7 @@
     "postinstall": "node scripts/download-devtool.cjs"
   },
   "dependencies": {
-    "@my-react/react": "^0.3.25",
+    "@my-react/react": "^0.3.27",
     "auto-bind": "^5.0.1",
     "bidi-js": "^1.0.3",
     "chalk": "^5.6.2",
@@ -22,8 +22,8 @@
     "get-east-asian-width": "^1.5.0",
     "indent-string": "^5.0.0",
     "lodash-es": "^4.17.23",
-    "react": "npm:@my-react/react@0.3.25",
-    "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.16",
+    "react": "npm:@my-react/react@0.3.27",
+    "react-reconciler": "npm:@my-react/react-reconciler-compact@0.0.18",
     "socket.io-client": "^4.8.3",
     "signal-exit": "^4.1.0",
     "strip-ansi": "^7.2.0",

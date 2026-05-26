@@ -11,6 +11,10 @@ if (process.env.MY_REACT_DEVTOOL) {
   require('./devtool.js')
 }
 
+import { __my_react_shared__ } from '@my-react/react/type'
+
+__my_react_shared__.enableRefAsProp.current = true
+
 // ============================================================
 // Core API (render/createRoot)
 // ============================================================
