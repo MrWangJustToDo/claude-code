@@ -371,7 +371,7 @@ export default class Ink {
       const DEVTOOL_PORT = process.env.DEVTOOL_PORT || '3002';
 
       injectIntoDevTools(`http://${DEVTOOL_PATH}:${DEVTOOL_PORT}`, {
-        rendererPackageName: '@my-react/react-terminal',
+        rendererPackageName: '@my-react/react-claude-ink',
       });
     }
   }

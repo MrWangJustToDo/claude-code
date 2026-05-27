@@ -16,10 +16,11 @@ const cliPath = join(projectRoot, 'src/entrypoints/cli.tsx')
 
 const defines = {
   ...getMacroDefines(),
-  // React production mode — prevents 6,889+ _debugStack Error objects
-  // (12MB) from accumulating during long-running sessions.
+  // React development mode — enables extra warnings and debug info from
+  // @my-react/react and @my-react/react-reconciler-compact.
+  // Note: this creates ~6,889 _debugStack Error objects (~12MB) in long sessions.
   // dev 模式使用 development 模式
-  'process.env.NODE_ENV': JSON.stringify('production'),
+  'process.env.NODE_ENV': JSON.stringify('development'),
 }
 
 const defineArgs = Object.entries(defines).flatMap(([k, v]) => [
